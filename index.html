@@ -1,0 +1,104 @@
+<!-- Este é um comentário em HTML. -->
+<!DOCTYPE html>
+<!-- Este é o DTD do HTML 5. -->
+
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME</title>
+    <!-- Este é um bloco STYLE - É considerado CSS INTERNO-->
+    <style>
+      
+      h1{
+        text-align: center;
+        border: solid 3px #0000ff;
+        color: blueviolet;
+        padding-top: 100px;
+        padding-bottom: 100px;
+      }
+
+    </style>
+    <!-- h1 (seletor) dentro das chaves (propriedades: valor)-->
+    <!-- NÃO PODE ESQUECER DE FECHAR A INSTRUÇÃO-->
+    <!-- INSTRUÇÃO 
+      h1{
+      propriedades: valor
+    }-->
+    <!-- TODOS OS h1S SERÃO AFETADOS NESSA SITUAÇÃO-->
+
+  </head>
+  <body>
+    <span id="topo"></span> <!--esse ID foi colocado como "checkpoint" para que voce consiga voltar para essa parte da pagina caso seja colocado em uma parte mais abaixo do site-->
+    <div class="container">
+      <header class="cabecalho">
+        <h1>Minha Página</h1> <!--esse tipo de estilização não é o apropriado-->
+        <!-- caso queira ver os limites do h1, usa "border: solid 2px #ff0000" do lado do text align-->
+        <nav>
+          <ul>
+            <!-- importante criar uma padronização de nomenclaturas para imagens -->
+						<!-- ensinar o arquivo index entrar na pasta img --> <!-- notação (./) -> o arquivo olha e volta -->
+            <li> <a href="./paginas/help.html"><img src="./img/question.png" alt="Interrogação" width="5%"> </a> </li>
+            <!-- width = mexe largura e altura proporcionalmente (quando começarmos a utilizar css não vamos mais usar isso aqui)-->
+					  <!-- uma pasta tem que estar sempre entre barras (ex: /img/)-->
+            <li><a href="./paginas/about.html"> <img src="./img/info.png" alt="Letra i dentro de um círculo" width="5%"> </a></li>
+            <li><a href="#contact"><img src="./img/contact.png" alt="Envelope com cartas." width="5%"></a></li>
+          </ul>
+        </nav>
+      
+      </header>
+
+      <section class="conteudo">
+        <div>
+          <h2>HELP</h2>
+          <p>Help - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa velit error vero asperiores ducimus veniam doloremque? Voluptates earum natus ex, doloremque vero in porro provident voluptatum cupiditate, quibusdam, officiis modi maxime quas dignissimos. Velit quae repellendus magnam nobis commodi adipisci itaque harum quos amet repellat laboriosam, voluptate eos nulla fuga perspiciatis quidem beatae sapiente pariatur maiores? Asperiores totam voluptatum error consequuntur et quisquam architecto! Officiis eius tempora animi! Saepe, alias fuga, ex possimus ipsum distinctio maxime porro doloribus officiis, quidem labore animi! Fugit placeat autem harum suscipit quasi perferendis, quam vero molestias! Sequi corporis ipsa repellat? Et consectetur ducimus tempora. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit facere perferendis accusamus ab aut incidunt sunt architecto exercitationem nesciunt molestiae tempore cupiditate corporis quisquam vel magnam maxime aperiam obcaecati iste, accusantium dolorum ipsa fuga ullam qui numquam? Officia quia eaque consequuntur.</p>
+          <a href="#">Mais...</a>
+        </div>
+        <div>
+          <h2>ABOUT</h2>
+          <p>About - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur sequi fugiat provident repellat aliquam! Qui optio voluptatibus facilis voluptas soluta!</p>
+          <a href="#">Mais...</a>
+        </div>
+        <!-- o id vai ser utilizado DENTRO DO HREF-->
+        <div id="contact"> <!--não existe outro documento com o mesmo ID que esse documento html-->
+          <h2>CONTACT</h2>
+          <form>
+            <fieldset>
+              <legend>Customer Data</legend>
+              <div>
+                <label for="idNm">Nome:</label>
+                <input type="text"  name="txtNm" id="idNm" placeholder="Digite seu nome."/>
+              </div>
+              <div>
+                <label for="idEmail">Email:</label>
+                <input type="email"  name="txtEmail" id="idEmail" placeholder="Digite seu email."/>
+              </div>
+              <div>
+                <button type="button">Send</button>
+              </div>
+            </fieldset>
+            <a href="#topo">Voltar</a>
+          </form>
+        </div>
+      </section>
+
+      <footer class="rodape">
+        <nav>
+          <!-- Unordered List-->
+          <ul>
+            <!-- List Item-->
+            <li><a href="https://www2.fiap.com.br" target="_blank">FIAP</a></li>
+            <li>
+              <a href="https://www.google.com.br" target="_blank">GOOGLE</a>
+            </li>
+            <li><a href="https://github.com" target="_blank">Github</a></li>
+            <!-- target="_blank" faz com que o link que colocamos no site abra em outra aba-->
+            <!-- List Item-->
+          </ul>
+        </nav>
+        <p>Todos os direitos reservados &copy; - Minha Página 2024</p>
+      </footer>
+
+    </div>
+  </body>
+</html>
