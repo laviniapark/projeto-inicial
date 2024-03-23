@@ -1,0 +1,6 @@
+/* Reset CSS: faz com que todo o CSS da pagina seja tirado */
+* {
+    margin: 0; /* espaco entre o elemento e a margem da pagina (ou de um elemento para outro)*/
+    padding: 0; /* espacamento entre o conteudo e as bordas do elemento */
+    box-sizing: border-box;
+}

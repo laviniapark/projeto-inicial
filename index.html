@@ -7,26 +7,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HOME</title>
-    <!-- Este é um bloco STYLE - É considerado CSS INTERNO-->
-    <style>
-      
-      h1{
-        text-align: center;
-        border: solid 3px #0000ff;
-        color: blueviolet;
-        padding-top: 100px;
-        padding-bottom: 100px;
-      }
 
-    </style>
-    <!-- h1 (seletor) dentro das chaves (propriedades: valor)-->
-    <!-- NÃO PODE ESQUECER DE FECHAR A INSTRUÇÃO-->
-    <!-- INSTRUÇÃO 
-      h1{
-      propriedades: valor
-    }-->
-    <!-- TODOS OS h1S SERÃO AFETADOS NESSA SITUAÇÃO-->
-
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <!--TAG LINK PARA O CSS SEMPRE ESTARA DENTRO DO HEAD-->
+    <!--rel = o que voce vai carregar no link (manter stylesheet)-->
   </head>
   <body>
     <span id="topo"></span> <!--esse ID foi colocado como "checkpoint" para que voce consiga voltar para essa parte da pagina caso seja colocado em uma parte mais abaixo do site-->
@@ -35,7 +20,7 @@
         <h1>Minha Página</h1> <!--esse tipo de estilização não é o apropriado-->
         <!-- caso queira ver os limites do h1, usa "border: solid 2px #ff0000" do lado do text align-->
         <nav>
-          <ul>
+          <ul style="list-style: circle; display: inline;">
             <!-- importante criar uma padronização de nomenclaturas para imagens -->
 						<!-- ensinar o arquivo index entrar na pasta img --> <!-- notação (./) -> o arquivo olha e volta -->
             <li> <a href="./paginas/help.html"><img src="./img/question.png" alt="Interrogação" width="5%"> </a> </li>
