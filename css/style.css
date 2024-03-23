@@ -1,7 +1,30 @@
 /* ASSIM QUE SE COMENTA */
 
-h1{
-    font-size: 3cm;
-    text-align: center;
-    background-color: red;
+/*
+    EXEMPLO DE SELETORES
+*/
+
+/* Exemplo de seletores do tipo TAG */
+
+header {
+    font-size: 4rem; /* determina valor para os outros elementos tentarem se basear */
 }
+
+h1 {
+    background-color: #000000; /*dizem que o hexadecimal e o que carrega mais rapido */
+    color: red;
+    font-size: 3em; /* 3x 16px = tamanho padrao do html*/
+    
+    /*  rem = baseado no HTML (tamanho padrao: 16px)
+        em = baseado no pai direto
+    */
+}
+/*
+1. Estamos selecionando TODAS as tags h1 (efeito em cascata)
+2. color = propriedade (e necessario ter as principais na ponta da lingua) -> nao precisa guardar TODAS
+3. valor = pode passar cor de 3 formas diferentes (red / #ff0000 / rgb(255, 0, 0))
+#ffffff / rgb(255, 255, 255) = branco
+#000000 / rgb(0, 0, 0) = preto 
+
+tente NAO TER mais de um h1 na pagina (ele e o unico titulo principal)
+*/
